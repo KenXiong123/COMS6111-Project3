@@ -1,5 +1,6 @@
 import sys
 import csv
+import os
 from collections import defaultdict
 from itertools import combinations, chain
 
@@ -8,6 +9,8 @@ def main():
     file_name = sys.argv[1]
     min_sup = sys.argv[2]
     min_conf = sys.argv[3]
+    if os.path.exists('output.txt'):
+        os.remove('output.txt')
     with open(file_name, 'r') as input_file, open('output.txt', 'a') as output_file:
         data = list(csv.reader(input_file))
         freq_itemsets = get_freq_itemsets(data, float(min_sup))

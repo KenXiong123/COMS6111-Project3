@@ -5,7 +5,7 @@
 ['HISPANIC'], 30.31%
 ['WHITE NON HISPANIC', 'MALE'], 23.39%
 ['WHITE NON HISPANIC', 'FEMALE'], 20.38%
-['MALE', 'HISPANIC'], 17.41%
+['HISPANIC', 'MALE'], 17.41%
 ['ASIAN AND PACIFIC ISLANDER'], 13.29%
 ['FEMALE', 'HISPANIC'], 12.9%
 ['BLACK NON HISPANIC'], 12.63%
@@ -14,27 +14,27 @@
 ['ASIAN AND PACIFIC ISLANDER', 'FEMALE'], 5.55%
 ['BLACK NON HISPANIC', 'FEMALE'], 5.35%
 ['Liam'], 1.22%
-['Liam', 'MALE'], 1.22%
+['MALE', 'Liam'], 1.22%
 ['Noah'], 1.08%
 ['MALE', 'Noah'], 1.08%
 ['Ethan'], 0.87%
 ['Ethan', 'MALE'], 0.87%
 ['Emma'], 0.81%
-['Emma', 'FEMALE'], 0.81%
+['FEMALE', 'Emma'], 0.81%
 ['Jacob'], 0.79%
 ['Jacob', 'MALE'], 0.79%
 ['Lucas'], 0.75%
-['MALE', 'Lucas'], 0.75%
+['Lucas', 'MALE'], 0.75%
 ['Olivia'], 0.74%
-['Olivia', 'FEMALE'], 0.74%
+['FEMALE', 'Olivia'], 0.74%
 ['Sophia'], 0.73%
-['FEMALE', 'Sophia'], 0.73%
+['Sophia', 'FEMALE'], 0.73%
 ['Mia'], 0.72%
-['FEMALE', 'Mia'], 0.72%
+['Mia', 'FEMALE'], 0.72%
 ['Aiden'], 0.7%
-['MALE', 'Aiden'], 0.7%
-['Liam', 'HISPANIC'], 0.7%
-['Liam', 'MALE', 'HISPANIC'], 0.7%
+['Aiden', 'MALE'], 0.7%
+['HISPANIC', 'Liam'], 0.7%
+['HISPANIC', 'MALE', 'Liam'], 0.7%
 ['Daniel'], 0.69%
 ['Daniel', 'MALE'], 0.69%
 ['Michael'], 0.68%
@@ -52,7 +52,7 @@
 ['Alexander'], 0.6%
 ['Alexander', 'MALE'], 0.6%
 ['Leah'], 0.58%
-['Leah', 'FEMALE'], 0.58%
+['FEMALE', 'Leah'], 0.58%
 ['Ava'], 0.57%
 ['Ava', 'FEMALE'], 0.57%
 ['Joseph'], 0.57%
@@ -61,7 +61,7 @@
 ['Mason', 'MALE'], 0.56%
 ['Ryan'], 0.55%
 ['James'], 0.54%
-['MALE', 'James'], 0.54%
+['James', 'MALE'], 0.54%
 ['Sebastian'], 0.53%
 ['Sebastian', 'MALE'], 0.53%
 ['MALE', 'Ryan'], 0.52%
@@ -76,7 +76,7 @@
 ['Sophia'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.73%)
 ['Mia'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.72%)
 ['Aiden'] => ['MALE'] (Conf: 100.0%, Supp: 0.7%)
-['Liam', 'HISPANIC'] => ['MALE'] (Conf: 100.0%, Supp: 0.7%)
+['HISPANIC', 'Liam'] => ['MALE'] (Conf: 100.0%, Supp: 0.7%)
 ['Daniel'] => ['MALE'] (Conf: 100.0%, Supp: 0.69%)
 ['Michael'] => ['MALE'] (Conf: 100.0%, Supp: 0.68%)
 ['David'] => ['MALE'] (Conf: 100.0%, Supp: 0.68%)
@@ -96,6 +96,6 @@
 ['BLACK NON HISPANIC'] => ['MALE'] (Conf: 57.65%, Supp: 7.28%)
 ['HISPANIC'] => ['MALE'] (Conf: 57.43%, Supp: 17.41%)
 ['Liam'] => ['HISPANIC'] (Conf: 56.93%, Supp: 0.7%)
-['Liam'] => ['MALE', 'HISPANIC'] (Conf: 56.93%, Supp: 0.7%)
-['Liam', 'MALE'] => ['HISPANIC'] (Conf: 56.93%, Supp: 0.7%)
+['Liam'] => ['HISPANIC', 'MALE'] (Conf: 56.93%, Supp: 0.7%)
+['MALE', 'Liam'] => ['HISPANIC'] (Conf: 56.93%, Supp: 0.7%)
 ['WHITE NON HISPANIC'] => ['MALE'] (Conf: 53.43%, Supp: 23.39%)
