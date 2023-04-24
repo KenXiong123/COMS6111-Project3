@@ -8,12 +8,12 @@ def main():
     file_name = sys.argv[1]
     min_sup = sys.argv[2]
     min_conf = sys.argv[3]
-    with open(file_name, 'r') as data_file:
-        data = list(csv.reader(data_file))
+    with open(file_name, 'r') as input_file, open('example-run.txt', 'a') as output_file:
+        data = list(csv.reader(input_file))
         freq_itemsets = get_freq_itemsets(data, float(min_sup))
         rules = generate_rules(data, freq_itemsets, float(min_sup), float(min_conf))
         for rule in rules:
-            print(rule[0])
+            output_file.write(rule[0])
 
 
 def get_freq_itemsets(data, min_sup):
@@ -79,7 +79,7 @@ def generate_rules(data, freq_itemsets, min_sup, min_conf):
                     confidence = freq_itemsets[itemset] / freq_itemsets[subset]
                     # If the confidence and support are greater than the minimum values, print the rule
                     if confidence >= min_conf and support >= min_sup:
-                        rule = f"{list(subset)} => {list(itemset - subset)} (Conf: {round(confidence * 100, 2)}%, Supp: {round(support * 100, 2)}%)"
+                        rule = f"{list(subset)} => {list(itemset - subset)} (Conf: {round(confidence * 100, 2)}%, Supp: {round(support * 100, 2)}%)\n"
                         tup = (rule, confidence)
                         rules.append(tup)
     rules = sorted(rules, key=lambda x: x[1], reverse=True)
