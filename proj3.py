@@ -8,7 +8,7 @@ def main():
     file_name = sys.argv[1]
     min_sup = sys.argv[2]
     min_conf = sys.argv[3]
-    with open(file_name, 'r') as input_file, open('example-run.txt', 'a') as output_file:
+    with open(file_name, 'r') as input_file, open('output.txt', 'a') as output_file:
         data = list(csv.reader(input_file))
         freq_itemsets = get_freq_itemsets(data, float(min_sup))
         rules = generate_rules(data, freq_itemsets, float(min_sup), float(min_conf))
