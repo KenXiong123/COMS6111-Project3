@@ -1,27 +1,95 @@
-['Olivia'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.74%)
-['Noah'] => ['MALE'] (Conf: 100.0%, Supp: 1.08%)
-['Leah'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.58%)
-['Sebastian'] => ['MALE'] (Conf: 100.0%, Supp: 0.53%)
-['Mia'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.72%)
-['Jacob'] => ['MALE'] (Conf: 100.0%, Supp: 0.79%)
-['Alexander'] => ['MALE'] (Conf: 100.0%, Supp: 0.6%)
-['Ava'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.57%)
-['Jayden'] => ['MALE'] (Conf: 100.0%, Supp: 0.62%)
-['Isabella'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.66%)
+==Frequent itemsets (min_sup=0.5%)
+['MALE'], 55.81%
+['FEMALE'], 44.19%
+['WHITE NON HISPANIC'], 43.77%
+['HISPANIC'], 30.31%
+['WHITE NON HISPANIC', 'MALE'], 23.39%
+['WHITE NON HISPANIC', 'FEMALE'], 20.38%
+['MALE', 'HISPANIC'], 17.41%
+['ASIAN AND PACIFIC ISLANDER'], 13.29%
+['FEMALE', 'HISPANIC'], 12.9%
+['BLACK NON HISPANIC'], 12.63%
+['ASIAN AND PACIFIC ISLANDER', 'MALE'], 7.74%
+['BLACK NON HISPANIC', 'MALE'], 7.28%
+['ASIAN AND PACIFIC ISLANDER', 'FEMALE'], 5.55%
+['BLACK NON HISPANIC', 'FEMALE'], 5.35%
+['Liam'], 1.22%
+['Liam', 'MALE'], 1.22%
+['Noah'], 1.08%
+['MALE', 'Noah'], 1.08%
+['Ethan'], 0.87%
+['Ethan', 'MALE'], 0.87%
+['Emma'], 0.81%
+['Emma', 'FEMALE'], 0.81%
+['Jacob'], 0.79%
+['Jacob', 'MALE'], 0.79%
+['Lucas'], 0.75%
+['MALE', 'Lucas'], 0.75%
+['Olivia'], 0.74%
+['Olivia', 'FEMALE'], 0.74%
+['Sophia'], 0.73%
+['FEMALE', 'Sophia'], 0.73%
+['Mia'], 0.72%
+['FEMALE', 'Mia'], 0.72%
+['Aiden'], 0.7%
+['MALE', 'Aiden'], 0.7%
+['Liam', 'HISPANIC'], 0.7%
+['Liam', 'MALE', 'HISPANIC'], 0.7%
+['Daniel'], 0.69%
+['Daniel', 'MALE'], 0.69%
+['Michael'], 0.68%
+['Michael', 'MALE'], 0.68%
+['David'], 0.68%
+['David', 'MALE'], 0.68%
+['Matthew'], 0.66%
+['Matthew', 'MALE'], 0.66%
+['Isabella'], 0.66%
+['Isabella', 'FEMALE'], 0.66%
+['Dylan'], 0.64%
+['Jayden'], 0.62%
+['Jayden', 'MALE'], 0.62%
+['Dylan', 'MALE'], 0.61%
+['Alexander'], 0.6%
+['Alexander', 'MALE'], 0.6%
+['Leah'], 0.58%
+['Leah', 'FEMALE'], 0.58%
+['Ava'], 0.57%
+['Ava', 'FEMALE'], 0.57%
+['Joseph'], 0.57%
+['Joseph', 'MALE'], 0.57%
+['Mason'], 0.56%
+['Mason', 'MALE'], 0.56%
+['Ryan'], 0.55%
+['James'], 0.54%
+['MALE', 'James'], 0.54%
+['Sebastian'], 0.53%
+['Sebastian', 'MALE'], 0.53%
+['MALE', 'Ryan'], 0.52%
+==High-confidence association rules (min_conf=50.0%)
 ['Liam'] => ['MALE'] (Conf: 100.0%, Supp: 1.22%)
-['Joseph'] => ['MALE'] (Conf: 100.0%, Supp: 0.57%)
-['Sophia'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.73%)
-['Emma'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.81%)
+['Noah'] => ['MALE'] (Conf: 100.0%, Supp: 1.08%)
 ['Ethan'] => ['MALE'] (Conf: 100.0%, Supp: 0.87%)
-['Michael'] => ['MALE'] (Conf: 100.0%, Supp: 0.68%)
-['James'] => ['MALE'] (Conf: 100.0%, Supp: 0.54%)
-['Aiden'] => ['MALE'] (Conf: 100.0%, Supp: 0.7%)
-['Matthew'] => ['MALE'] (Conf: 100.0%, Supp: 0.66%)
+['Emma'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.81%)
+['Jacob'] => ['MALE'] (Conf: 100.0%, Supp: 0.79%)
 ['Lucas'] => ['MALE'] (Conf: 100.0%, Supp: 0.75%)
-['David'] => ['MALE'] (Conf: 100.0%, Supp: 0.68%)
-['Mason'] => ['MALE'] (Conf: 100.0%, Supp: 0.56%)
-['Daniel'] => ['MALE'] (Conf: 100.0%, Supp: 0.69%)
+['Olivia'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.74%)
+['Sophia'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.73%)
+['Mia'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.72%)
+['Aiden'] => ['MALE'] (Conf: 100.0%, Supp: 0.7%)
 ['Liam', 'HISPANIC'] => ['MALE'] (Conf: 100.0%, Supp: 0.7%)
+['Daniel'] => ['MALE'] (Conf: 100.0%, Supp: 0.69%)
+['Michael'] => ['MALE'] (Conf: 100.0%, Supp: 0.68%)
+['David'] => ['MALE'] (Conf: 100.0%, Supp: 0.68%)
+['Matthew'] => ['MALE'] (Conf: 100.0%, Supp: 0.66%)
+['Isabella'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.66%)
+['Jayden'] => ['MALE'] (Conf: 100.0%, Supp: 0.62%)
+['Alexander'] => ['MALE'] (Conf: 100.0%, Supp: 0.6%)
+['Leah'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.58%)
+['Ava'] => ['FEMALE'] (Conf: 100.0%, Supp: 0.57%)
+['Joseph'] => ['MALE'] (Conf: 100.0%, Supp: 0.57%)
+['Mason'] => ['MALE'] (Conf: 100.0%, Supp: 0.56%)
+['James'] => ['MALE'] (Conf: 100.0%, Supp: 0.54%)
+['Sebastian'] => ['MALE'] (Conf: 100.0%, Supp: 0.53%)
 ['Ryan'] => ['MALE'] (Conf: 95.48%, Supp: 0.52%)
 ['Dylan'] => ['MALE'] (Conf: 94.6%, Supp: 0.61%)
 ['ASIAN AND PACIFIC ISLANDER'] => ['MALE'] (Conf: 58.21%, Supp: 7.74%)

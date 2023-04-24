@@ -12,6 +12,12 @@ def main():
         data = list(csv.reader(input_file))
         freq_itemsets = get_freq_itemsets(data, float(min_sup))
         rules = generate_rules(data, freq_itemsets, float(min_sup), float(min_conf))
+
+        output_file.write(f'==Frequent itemsets (min_sup={round(float(min_sup) * 100, 2)}%)\n')
+        for itemset in freq_itemsets:
+            support = freq_itemsets[itemset] / len(data)
+            output_file.write(f'{list(itemset)}, {round(support * 100, 2)}%\n')
+        output_file.write(f'==High-confidence association rules (min_conf={round(float(min_conf) * 100, 2)}%)\n')
         for rule in rules:
             output_file.write(rule[0])
 
@@ -55,7 +61,7 @@ def get_freq_itemsets(data, min_sup):
             break
 
         k += 1
-
+    result = dict(sorted(result.items(), key=lambda x: x[1], reverse=True))
     return result
 
 
